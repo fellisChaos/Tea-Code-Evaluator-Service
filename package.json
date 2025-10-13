@@ -8,7 +8,7 @@
     "watch": "npx tsc -w",
     "prestart": "npm run build",
     "start": "npx nodemon dist/index.js",
-    "dev": "npx concurrently --kill-others \"npm run watch\" \"npm start\"",
+    "dev": "npx concurrently --kill-others \"npm run watch\" \"npm run start\"",
     "lint": "eslint './src/**/*.{ts,tsx,js,jsx}'",
     "lint:fix": "eslint './src/**/*.{ts,tsx,js,jsx}' --fix",
     "format": "prettier --write './src/**/*.{ts,tsx,js,jsx,json,css,md}'"
